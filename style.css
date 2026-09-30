@@ -1,0 +1,83 @@
+
+@page { size: A4; margin: 0; }
+:root{
+  --ink:#25352d; --deep:#17352c; --gold:#b68a3a; --cream:#f5f0e6;
+  --paper:#fbfaf7; --muted:#716d63; --line:#d8d0c1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#7d7d7c;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+body{min-height:100vh}
+.toolbar{position:fixed;z-index:20;top:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:rgba(20,31,27,.94);padding:8px 12px;border-radius:999px;color:white;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.toolbar button{border:0;background:#fff;color:#18372d;padding:8px 13px;border-radius:999px;font-weight:700;cursor:pointer}
+.toolbar .printBtn{background:var(--gold);color:white}
+#pageIndicator{font-size:12px;min-width:65px;text-align:center}
+.page{width:210mm;height:297mm;margin:0 auto 12mm;background:var(--paper);position:relative;overflow:hidden;box-shadow:0 12px 45px rgba(0,0,0,.18);page-break-after:always}
+.pageHeader{height:27mm;padding:13mm 15mm 6mm;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line)}
+.kicker{font-size:9px;letter-spacing:2.3px;color:var(--gold);font-weight:800}
+h2{font-family:Georgia,serif;font-size:29px;line-height:1.05;margin:4px 0 0;color:var(--deep);font-weight:500}
+h2 em{color:var(--gold);font-style:italic}
+.miniBrand{font-size:9px;letter-spacing:1.7px;font-weight:800;color:var(--muted)}
+.cover{color:white;background:#122a22}
+.cover .hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.coverShade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,31,25,.82) 0%,rgba(12,31,25,.43) 43%,rgba(12,31,25,.06) 78%),linear-gradient(0deg,rgba(10,22,18,.72),transparent 36%)}
+.coverTop{position:absolute;top:13mm;left:14mm;right:14mm;display:flex;justify-content:space-between;align-items:flex-start}
+.brandMark{display:flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.55);padding:7px 9px}
+.brandMark span{font-family:Georgia,serif;font-size:22px;color:#e2b75d}
+.brandMark small{font-size:7px;line-height:1.25;letter-spacing:1px}
+.edition{font-size:8px;letter-spacing:2px;padding-top:7px}
+.coverContent{position:absolute;left:15mm;top:77mm;width:95mm}
+.coverContent .eyebrow{font-size:12px;letter-spacing:4px;color:hsl(40, 84%, 64%);font-weight:800}
+.coverContent h1{font-family:Georgia,serif;font-size:53px;line-height:.86;margin:8px 0 12px;font-weight:500}
+.coverContent h1 em{color:#e6b249;font-style:normal}
+.rule{width:46mm;height:2px;background:#d9ad55;margin:7mm 0}
+.location{font-size:13px;line-height:1.45;font-weight:700;letter-spacing:.7px}
+.location span{font-size:10px;letter-spacing:1.4px;font-weight:500;opacity:.9}
+.tagline{font-family:Georgia,serif;font-size:12px;line-height:1.5;max-width:82mm;color:#f2eee5}
+.coverFooter{position:absolute;bottom:11mm;left:15mm;right:15mm;border-top:1px solid rgba(255,255,255,.38);padding-top:5mm;display:flex;justify-content:space-between;font-size:7px;letter-spacing:1.5px}
+.introGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:8mm;padding:10mm 15mm 6mm}
+.introImage{position:relative;height:104mm;overflow:hidden}
+.introImage img{width:100%;height:100%;object-fit:cover}
+.imageCaption{position:absolute;bottom:0;left:0;right:0;background:rgba(18,53,44,.88);color:white;padding:3.5mm;font-size:9px;letter-spacing:1px}
+.introCopy .lead{font-family:Georgia,serif;font-size:17px;line-height:1.35;margin:0 0 7mm;color:var(--deep)}
+.featureList{border-top:1px solid var(--line)}
+.featureList div{display:grid;grid-template-columns:31mm 1fr;gap:4mm;padding:3.7mm 0;border-bottom:1px solid var(--line)}
+.featureList b{font-size:8px;letter-spacing:1.5px;color:var(--gold)}
+.featureList span{font-size:9.5px;line-height:1.4;color:#48463f}
+.amenitiesTitle,.areaTitle{margin:3mm 15mm 3mm;padding-top:3mm;border-top:2px solid var(--deep);font-size:9px;letter-spacing:2px;font-weight:800;color:var(--deep)}
+.amenityGrid{display:grid;grid-template-columns:1fr 1fr;gap:5mm;padding:0 15mm}
+.amenity{border:1px solid var(--line);padding:4mm;background:#fff}
+.amenity span{font-size:8px;color:var(--gold);font-weight:800}
+.amenity b{display:block;font-family:Georgia,serif;font-size:14px;margin:1.5mm 0;color:var(--deep)}
+.amenity p{font-size:8.5px;line-height:1.45;margin:0;color:#5e5a51}
+.sourceNote{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7px;color:#77736a}
+.planGrid{display:grid;grid-template-columns:1fr 1fr;gap:5mm;padding:8mm 15mm 4mm}
+.planGrid figure{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden}
+.planGrid img{width:100%;height:59mm;display:block;object-fit:cover}
+.planGrid figcaption{display:flex;align-items:center;gap:4mm;padding:3mm 4mm;background:var(--deep);color:#fff}
+.planGrid figcaption b{font-family:Georgia,serif;color:#e2b75d;font-size:17px}
+.planGrid figcaption span{font-size:8px;letter-spacing:1.5px}
+.planNote{margin:2mm 15mm 5mm;padding:3mm 4mm;border-left:3px solid var(--gold);background:#f1ede4;font-size:7.5px;line-height:1.4;color:#5f5b52}
+.areaTitle{margin-top:2mm}
+.areaTable{border-collapse:collapse;width:180mm;margin:0 15mm;font-size:8.2px}
+.areaTable th{background:var(--deep);color:#fff;padding:2.5mm;text-align:left;letter-spacing:1px;font-size:7.5px}
+.areaTable td{border:1px solid var(--line);padding:2.2mm}
+.areaTable td:first-child{font-weight:800;color:var(--deep)}
+.specColumns{display:grid;grid-template-columns:1fr 1fr;gap:8mm;padding:7mm 15mm 5mm}
+.specCol article{margin:0 0 4.1mm}
+.specCol h3{font-size:8.5px;letter-spacing:1.7px;color:var(--gold);margin:0 0 1.5mm;padding-bottom:1.2mm;border-bottom:1px solid var(--line)}
+.specCol ul{margin:0;padding-left:4.5mm}
+.specCol li{font-size:7.8px;line-height:1.35;margin:0 0 1mm;color:#47443d}
+.closingBand{position:absolute;left:0;right:0;bottom:16mm;background:var(--deep);color:white;padding:6mm 15mm;display:flex;justify-content:space-between;align-items:center}
+.closingBand span{font-family:Georgia,serif;color:#e2b75d;font-size:18px}
+.closingBand b{display:block;font-size:7px;letter-spacing:2px;margin-top:1mm}
+.address{text-align:right;font-size:8px;line-height:1.5;letter-spacing:.8px}
+.address small{color:#d9caa9;font-size:7px}
+.legal{position:absolute;bottom:5mm;left:15mm;right:15mm;text-align:center;font-size:6.3px;color:#77736a}
+@media print{
+  body{background:#fff}
+  .toolbar{display:none!important}
+  .page{margin:0;box-shadow:none}
+}
+@media screen and (max-width:900px){
+  .page{transform-origin:top center;transform:scale(.75);margin-bottom:-70mm}
+}
