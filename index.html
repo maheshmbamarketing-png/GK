@@ -5,325 +5,256 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GK The Banyan — Digital Catalogue</title>
 <link rel="stylesheet" href="style.css">
-<style>
-  .contact-map-wrapper {
-      width: 100%;
-      height: 200%;
-      min-height: 450px;
-      border-radius: 15px;
-      overflow: hidden;
-      /* margin: 10%; */
-      border: 1px solid var(--border-color);
-  }
-
-  .contact-map-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      margin: 0%;
-      padding: 5%;
-  }
-</style>
 </head>
 <body>
   <div class="toolbar no-print">
-    <button onclick="prevPage()">← Previous</button>
-    <span id="pageIndicator" style="font-size: 1.05rem; font-weight: 600;">Page 1 / 4</span>
-    <button onclick="nextPage()">Next →</button>
-    <button class="printBtn" onclick="window.print()">Print / Save PDF</button>
+    <button type="button" id="prevBtn">← Previous</button>
+    <span id="pageIndicator">Page 1 / 4</span>
+    <button type="button" id="nextBtn">Next →</button>
+    <button type="button" class="printBtn" id="printBtn">Print / Save PDF</button>
   </div>
 
 <main id="catalogue">
 
+<!-- PAGE 1 : COVER -->
 <section class="page cover" data-page="1">
-    <img class="hero" src="assets/exterior.jpg" alt="GK The Banyan apartment exterior">
-    <!-- <div class="coverShade"></div> -->
-    <div class="coverTop">
-      <div class="brandMark">
-        <span style="font-size: 1.5rem;" >GK</span>
-        <small style="font-size: 0.9rem;">BUILDERS &amp;
-          <br>
-          DEVELOPERS</small>
-      </div>
-      <div class="edition" style="font-size: 1.05rem; letter-spacing: 1px;">
-        PROPOSED RESIDENTIAL APARTMENTS
-      </div>
+  <img class="hero" src="assets/exterior.jpg" alt="GK The Banyan apartment exterior">
+  <div class="coverTop">
+    <div class="brandMark">
+      <span>GK</span>
+      <small>BUILDERS &amp;<br>DEVELOPERS</small>
     </div>
-    <div class="coverContent">
-      <div class="eyebrow" style="font-size: 1.2rem; letter-spacing: 2px;">
-        THE BANYAN
-      </div>
-      <h1 style="font-size: 3.8rem; line-height: 1.15;" >GK THE<br><em style="font-size: 3.8rem;">BANYAN</em></h1>
-      <div class="rule"></div>
-        <p class="tagline" style="font-size: 1.15rem; line-height: 1.5;">
-        BRING YOUR DREAMS TO REALITY.
-      </p>
-        <p class="location" style="font-size: 1.15rem;">
-          KULAKKARAI STREET, CHROMPET<br>
-          <span style="font-size: 1.05rem;">
-            NEAR PADAVETAMMAN TEMPLE
-          </span>
-        </p>
-      
-    </div>
-    <!-- <div class="coverFooter" style="font-size: 0.95rem;">
-      <div>ARCHITECTURAL PROFILE</div>
-      <div>APARTMENT SPECIFICATIONS &amp; AREA STATEMENT</div>
-    </div> -->
+    <div class="edition">BRING YOUR DREAMS TO REALITY</div>
+  </div>
+  <div class="coverContent">
+    <div class="eyebrow">THE BANYAN</div>
+    <h1>GK THE<br><em>BANYAN</em></h1>
+    <div class="rule"></div>
+    <!-- <p class="tagline">BRING YOUR DREAMS TO REALITY.</p> -->
+    <p class="location">
+      KULAKKARAI STREET, CHROMPET<br>
+      <span>NEAR PADAVETAMMAN TEMPLE</span>
+    </p>
+  </div>
 </section>
 
+<!-- PAGE 2 : PROJECT PROFILE -->
 <section class="page intro" data-page="2">
   <div class="pageHeader">
     <div>
-      <span class="kicker" style="font-size: 0.95rem;">
-      01 / PROJECT PROFILE</span>
-      <h2 style="font-size: 2.3rem;">Designed for everyday <em style="font-size: 2.3rem;">comfort</em>
-      </h2>
+      <span class="kicker">01 / PROJECT PROFILE</span>
+      <h2>Designed for everyday <em>comfort</em></h2>
     </div>
-    <div class="miniBrand" style="font-size: 1.05rem;">GK THE BANYAN</div>
+    <div class="miniBrand">GK THE BANYAN</div>
   </div>
+
   <div class="introGrid">
     <div class="introImage">
-      <img src="assets/exterior.jpg" alt="Apartment elevation">
-      <div class="imageCaption" style="font-size: 0.95rem;">Contemporary residential elevation</div>
+      <img src="C:\Users\mahes\Downloads\GK Claude\assets\CHROMPET-R5.jpg.jpeg" alt="Apartment elevation">
+      <div class="imageCaption">Contemporary residential elevation</div>
     </div>
     <div class="introCopy">
-      <p class="lead" style="font-size: 1rem; line-height: 1.1;">A residential project conceived around durable construction, clean finishes and practical home provisions.</p>
+      <p class="lead">A residential project conceived around durable construction, clean finishes and practical home provisions.</p>
       <div class="featureList">
-        <div>
-          <b style="font-size: 0.75rem;">RCC</b>
-          <span style="font-size: 0.75rem;">
-            Framed structure with seismic design
-          </span>
-        </div>
-        <div>
-          <b style="font-size: 0.75rem;"">VITRIFIED</b>
-          <span style="font-size: 0.75rem;">
-            2' × 2' flooring in living, dining and bedrooms
-          </span>
-        </div>
-        <div>
-          <b style="font-size: 0.75rem;"">TEAK</b>
-          <span style="font-size: 0.75rem;">
-            Teak wood main door frame &amp;
-            panels with melamine polish
-          </span>
-        </div>
-        <div>
-          <b style="font-size: 0.75rem;">UPVC</b>
-          <span style="font-size: 0.75rem;">
-            Windows with translucent-glass toilet ventilators
-          </span>
-        </div>
-        <div>
-          <b style="font-size: 0.75rem;">GRANITE</b>
-          <span style="font-size: 0.75rem;">
-            Kitchen counter with stainless-steel single bowl sink
-          </span>
-        </div>
-        <div><b style="font-size: 0.75rem;"">CPVC</b><span style="font-size: 0.75rem;">Concealed water supply with FlowGuard material</span></div>
+        <div><b>RCC</b><span>Framed structure with seismic design</span></div>
+        <div><b>VITRIFIED</b><span>2' × 2' flooring in living, dining and bedrooms</span></div>
+        <div><b>TEAK</b><span>Teak wood main door frame &amp; panels with melamine polish</span></div>
+        <div><b>UPVC</b><span>Windows with translucent-glass toilet ventilators</span></div>
+        <div><b>GRANITE</b><span>Kitchen counter with stainless-steel single bowl sink</span></div>
+        <div><b>CPVC</b><span>Concealed water supply with FlowGuard material</span></div>
       </div>
     </div>
   </div>
-  <div class="amenitiesTitle" style="font-size: 1.4rem;">
-    APARTMENT FEATURES &amp; 
-    PROVISIONS
-  </div>
+
+  <div class="amenitiesTitle">APARTMENT FEATURES &amp; PROVISIONS</div>
   <div class="amenityGrid">
     <div class="amenity">
-      <span style="font-size: 1.1rem;">01</span>
-      <b style="font-size: 1.2rem;">Kitchen</b>
-      <p style="font-size: 1.05rem;">2' ceramic tile dado, granite counter, single-bowl sink, Aqua-guard &amp; 
-        microwave points, kitchen loft.</p>
-      </div>
-    <div class="amenity">
-      <span style="font-size: 1.1rem;">02</span>
-      <b style="font-size: 1.2rem;">Bathrooms</b>
-      <p style="font-size: 1.05rem;">Anti-skid flooring, tile dado up to 7 ft, wash basin, wall-mounted WC, CP fittings and geyser provision.</p>
+      <span>01</span>
+      <b>Kitchen</b>
+      <p>2' ceramic tile dado, granite counter, single-bowl sink, Aqua-guard &amp; microwave points, kitchen loft.</p>
     </div>
     <div class="amenity">
-      <span style="font-size: 1.1rem;">03</span>
-      <b style="font-size: 1.2rem;">Electrical</b>
-      <p style="font-size: 1.05rem;">Concealed wiring in PVC conduits, ISI-standard RR Kabel or equivalent, Legrand or equivalent modular switches.</p>
+      <span>02</span>
+      <b>Bathrooms</b>
+      <p>Anti-skid flooring, tile dado up to 7 ft, wash basin, wall-mounted WC, CP fittings and geyser provision.</p>
     </div>
     <div class="amenity">
-      <span style="font-size: 1.1rem;">04</span>
-      <b style="font-size: 1.2rem;">Connectivity</b>
-      <p style="font-size: 1.05rem;">TV/telephone points in living room and master bedroom; split A/C provision in bedrooms.  </p>
+      <span>03</span>
+      <b>Electrical</b>
+      <p>Concealed wiring in PVC conduits, ISI-standard RR Kabel or equivalent, Legrand or equivalent modular switches.</p>
+    </div>
+    <div class="amenity">
+      <span>04</span>
+      <b>Connectivity</b>
+      <p>TV/telephone points in living room and master bedroom; split A/C provision in bedrooms.</p>
     </div>
   </div>
-  <!-- <div class="sourceNote" style="font-size: 0.95rem;">
-    Specifications reproduced from the supplied apartment specification document.
-  </div> -->
 </section>
 
+<!-- PAGE 3 : FLOOR PLANS -->
 <section class="page plans" data-page="3">
   <div class="pageHeader">
     <div>
-      <span class="kicker" style="font-size: 0.95rem;">02 / FLOOR PLANS</span>
-      <h2 style="font-size: 2.3rem;">Explore the <em style="font-size: 2.3rem;">layout</em>
-      </h2>
+      <span class="kicker">02 / FLOOR PLANS</span>
+      <h2>Explore the <em>layout</em></h2>
     </div>
-    <div class="miniBrand" style="font-size: 1.05rem;">GK THE BANYAN</div>
+    <div class="miniBrand">GK THE BANYAN</div>
   </div>
-  <div class="planGrid">
-    <figure><img src="C:\Users\mahes\Downloads\GK_The_Banyan_A4_Digital_Catalogue_HTML\assets\1ST FLR-CHROMPET.jpg.jpeg" alt="First floor plan">
-      <figcaption><b style="font-size: 1.1rem;">01</b>
-        <span style="font-size: 1.05rem;">FIRST FLOOR</span>
-      </figcaption>
-    </figure>
-    <figure><img src="C:\Users\mahes\Downloads\GK_The_Banyan_A4_Digital_Catalogue_HTML\assets\2ND FLR-CHROMPET.jpg.jpeg" alt="Second floor plan">
-      <figcaption><b style="font-size: 1.1rem;">02</b>
-        <span style="font-size: 1.05rem;">SECOND FLOOR</span>
-      </figcaption>
-    </figure>
-    <figure><img src="C:\Users\mahes\Downloads\GK_The_Banyan_A4_Digital_Catalogue_HTML\assets\3RD FLR-CHROMPET.jpg.jpeg" alt="Third floor plan">
-      <figcaption><b style="font-size: 1.1rem;">03</b>
-        <span style="font-size: 1.05rem;">THIRD FLOOR</span>
-      </figcaption>
-    </figure>
-    <figure><img src="C:\Users\mahes\Downloads\GK_The_Banyan_A4_Digital_Catalogue_HTML\assets\stilt-floor.jpg" alt="Stilt floor plan">
-      <figcaption><b style="font-size: 1.1rem;">04</b>
-        <span style="font-size: 1.05rem;">STILT FLOOR</span>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- <div class="planNote" style="font-size: 1.05rem;">
-    <strong style="font-size: 1.05rem;">Floor-plan artwork:</strong>
-    The catalogue is structured for four supplied plan images. The current package contains labelled placeholders because the four architectural plan images were not included with the uploaded files.
-  </div> -->
 
-  <div class="areaTitle" style="font-size: 1.35rem;">TOWER-WISE AREA STATEMENT</div>
-  <table class="areaTable" style="font-size: 1.05rem;">
-    <thead><tr><th style="font-size: 1.05rem;">TOWER</th>
-      <th style="font-size: 1.05rem;">FLOOR</th>
-      <th style="font-size: 1.05rem;">FLAT 1</th>
-      <th style="font-size: 1.05rem;">FLAT 2</th>
-    </tr>
-  </thead>
-    <tbody>
-      <tr><td rowspan="3">TOWER A</td><td>First</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
-      <tr><td>Second</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
-      <tr><td>Third</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
-      <tr><td rowspan="3">TOWER B</td><td>First</td><td>1039 sq.ft</td><td>1019 sq.ft</td></tr>
-      <tr><td>Second</td><td>946 sq.ft</td><td>1117 sq.ft</td></tr>
-      <tr><td>Third</td><td>946 sq.ft</td><td>1117 sq.ft</td></tr>
-    </tbody>
-  </table>
+  <div class="planGrid">
+    <figure>
+      <img src="C:\Users\mahes\Downloads\GK Claude\assets\1ST FLR-CHROMPET.jpg.jpeg" alt="First floor plan">
+      <figcaption><b>01</b><span>FIRST FLOOR</span></figcaption>
+    </figure>
+    <figure>
+      <img src="C:\Users\mahes\Downloads\GK Claude\assets\2ND FLR-CHROMPET.jpg.jpeg" alt="Second floor plan">
+      <figcaption><b>02</b><span>SECOND FLOOR</span></figcaption>
+    </figure>
+    <figure>
+      <img src="C:\Users\mahes\Downloads\GK Claude\assets\3RD FLR-CHROMPET.jpg.jpeg" alt="Third floor plan">
+      <figcaption><b>03</b><span>THIRD FLOOR</span></figcaption>
+    </figure>
+    <figure>
+      <img src="C:\Users\mahes\Downloads\GK Claude\assets\STILT FLOOR.jpg.jpeg" alt="Stilt floor plan">
+      <figcaption><b>04</b><span>STILT FLOOR</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="areaTitle">TOWER-WISE AREA STATEMENT</div>
+  <div class="tableWrap">
+    <table class="areaTable">
+      <thead>
+        <tr><th>TOWER</th><th>FLOOR</th><th>FLAT 1</th><th>FLAT 2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td rowspan="3">TOWER A</td><td>First</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
+        <tr><td>Second</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
+        <tr><td>Third</td><td>1003 sq.ft</td><td>1131 sq.ft</td></tr>
+        <tr><td rowspan="3">TOWER B</td><td>First</td><td>1039 sq.ft</td><td>1019 sq.ft</td></tr>
+        <tr><td>Second</td><td>946 sq.ft</td><td>1117 sq.ft</td></tr>
+        <tr><td>Third</td><td>946 sq.ft</td><td>1117 sq.ft</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
+<!-- PAGE 4 : SPECIFICATIONS -->
 <section class="page specs" data-page="4">
   <div class="pageHeader">
-    <div><span class="kicker" style="font-size: 0.95rem;">03 / SPECIFICATIONS</span>
-      <h2 style="font-size: 2.3rem;">Crafted with <em style="font-size: 2.3rem;">care</em></h2>
+    <div>
+      <span class="kicker">03 / SPECIFICATIONS</span>
+      <h2>Crafted with <em>care</em></h2>
     </div>
-    <div class="miniBrand" style="font-size: 1.05rem;">GK THE BANYAN</div>
+    <div class="miniBrand">GK THE BANYAN</div>
   </div>
+
   <div class="specColumns">
     <div class="specCol">
       <article>
-        <h3 style="font-size: 1.0rem;">STRUCTURE</h3>
-        <ul style="font-size: .50rem;">
-          <li style="font-size: 0.75rem;">RCC framed structure with seismic design</li>
-          <!-- <li style="font-size: 0.75rem;">Solid concrete block masonry or wire cut brick</li> -->
-          <li style="font-size: 0.75rem;">All Walls Constructed in Wire cut Chamber Red Bricks.</li>
+        <h3>STRUCTURE</h3>
+        <ul>
+          <li>RCC framed structure with seismic design</li>
+          <li>All Walls Constructed in Wire cut Chamber Red Bricks.</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">FLOORING</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">2' × 2' vitrified tile flooring in living, dining and all bedrooms</li>
-          <li style="font-size: 0.75rem;">Matt-finish ceramic tile flooring in kitchen</li>
-          <li style="font-size: 0.75rem;">Anti-skid ceramic tile flooring in balconies and bathrooms</li>
+        <h3>FLOORING</h3>
+        <ul>
+          <li>2' × 2' vitrified tile flooring in living, dining and all bedrooms</li>
+          <li>Matt-finish ceramic tile flooring in kitchen</li>
+          <li>Anti-skid ceramic tile flooring in balconies and bathrooms</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">WALL FINISHES</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">External and internal walls with cement plastering</li>
-          <li style="font-size: 0.75rem;">Exterior-grade emulsion paint for outer walls</li>
-          <li style="font-size: 0.75rem;">Putty finish and quality emulsion paint for interior walls</li>
-          <li style="font-size: 0.75rem;">Enamel paint for MS grills and shutters</li>
+        <h3>WALL FINISHES</h3>
+        <ul>
+          <li>External and internal walls with cement plastering</li>
+          <li>Exterior-grade emulsion paint for outer walls</li>
+          <li>Putty finish and quality emulsion paint for interior walls</li>
+          <li>Enamel paint for MS grills and shutters</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">MAIN DOOR</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">Teak wood door frame and teak wood panels with melamine polish</li>
-          <li style="font-size: 0.75rem;">Godrej mortise lock</li>
+        <h3>MAIN DOOR</h3>
+        <ul>
+          <li>Teak wood door frame and teak wood panels with melamine polish</li>
+          <li>Godrej mortise lock</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">OTHER DOORS</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">Hard-wood door frame</li>
-          <li style="font-size: 0.75rem;">Readymade flush shutters</li>
+        <h3>OTHER DOORS</h3>
+        <ul>
+          <li>Hard-wood door frame</li>
+          <li>Readymade flush shutters</li>
         </ul>
       </article>
-      <article><h3 style="font-size: 1.25rem;">WINDOWS</h3>
-        <ul style="font-size: 1.05rem;"><li style="font-size: 0.75rem;">UPVC windows</li>
-          <li style="font-size: 0.75rem;">Ventilator system with translucent glass for toilets</li></ul></article>
+      <article>
+        <h3>WINDOWS</h3>
+        <ul>
+          <li>UPVC windows</li>
+          <li>Ventilator system with translucent glass for toilets</li>
+        </ul>
+      </article>
     </div>
+
     <div class="specCol">
       <article>
-        <h3 style="font-size: 1.25rem;">KITCHEN</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">2' high ceramic tile dado</li>
-          <li style="font-size: 0.75rem;">Granite counter top</li>
-          <li style="font-size: 0.75rem;">Stainless steel single bowl sink</li>
-          <li style="font-size: 0.75rem;">Provision for Aqua-guard point and microwave</li>
-          <li style="font-size: 0.75rem;">Loft provided for kitchen</li>
+        <h3>KITCHEN</h3>
+        <ul>
+          <li>2' high ceramic tile dado</li>
+          <li>Granite counter top</li>
+          <li>Stainless steel single bowl sink</li>
+          <li>Provision for Aqua-guard point and microwave</li>
+          <li>Loft provided for kitchen</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">TOILETS</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">Anti-skid flooring and tile dado up to 7 ft height</li>
-          <li style="font-size: 0.75rem;">Wash basin and wall-mounted water closet of ESSCO / PARRYWARE</li>
-          <li style="font-size: 0.75rem;">Quality CP fittings of ESSCO / PARRYWARE</li>
-          <li style="font-size: 0.75rem;">Provision for geyser</li>
+        <h3>TOILETS</h3>
+        <ul>
+          <li>Anti-skid flooring and tile dado up to 7 ft height</li>
+          <li>Wash basin and wall-mounted water closet of ESSCO / PARRYWARE</li>
+          <li>Quality CP fittings of ESSCO / PARRYWARE</li>
+          <li>Provision for geyser</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">PLUMBING</h3>
-        <ul style="font-size: 1.05rem;">
-          <li style="font-size: 0.75rem;">Concealed water supply in CPVC FlowGuard material</li>
-          <li style="font-size: 0.75rem;">Water supply main lines in UPVC</li>
-          <li style="font-size: 0.75rem;">Individual Bore for Tower-A and Toer-B with 10000 Litres capacity Water Tank</li>
+        <h3>PLUMBING</h3>
+        <ul>
+          <li>Concealed water supply in CPVC FlowGuard material</li>
+          <li>Water supply main lines in UPVC</li>
+          <li>Individual Bore for Tower-A and Toer-B with 10000 Litres capacity Water Tank</li>
         </ul>
       </article>
       <article>
-        <h3 style="font-size: 1.25rem;">ELECTRICAL</h3>
-        <ul style="font-size: 1.25rem;">
-          <li style="font-size: 0.75rem;">Concealed internal wiring in PVC conduits</li>
-          <li style="font-size: 0.75rem;">ISI standard cables of RR Kabel or equivalent</li>
-          <li style="font-size: 0.75rem;">Modular switches of Legrand or equivalent</li>
-          <li style="font-size: 0.75rem;">Three phase supply for each 2, 3 &amp; 
-          4 bedroom flat</li>
-          <li style="font-size: 0.75rem;">TV/telephone point in living room and master bedroom</li>
-          <li style="font-size: 0.75rem;">Provision for split A/C in bedrooms</li>
-          <li style="font-size: 0.75rem;">EV Charger available in Stilt Floor</li>
+        <h3>ELECTRICAL</h3>
+        <ul>
+          <li>Concealed internal wiring in PVC conduits</li>
+          <li>ISI standard cables of RR Kabel or equivalent</li>
+          <li>Modular switches of Legrand or equivalent</li>
+          <li>Three phase supply for each 2, 3 &amp; 4 bedroom flat</li>
+          <li>TV/telephone point in living room and master bedroom</li>
+          <li>Provision for split A/C in bedrooms</li>
+          <li>EV Charger available in Stilt Floor</li>
         </ul>
       </article>
     </div>
+  </div>
+<div class="contact-map-wrapper">
+    <iframe title="Project location map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.376509746535!2d80.15505597507604!3d12.947742487365485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU2JzUxLjkiTiA4MMKwMDknMjcuNSJF!5e0!3m2!1sen!2sin!4v1790061825595!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
   <div class="closingBand">
-    <div style="font-size: 1.05rem;">
-      <span style="font-size: 1.05rem;">GK THE BANYAN</span>
-      <b style="font-size: 1.1rem;">RESIDENTIAL APARTMENTS</b>
+    <div>
+      <span>GK THE BANYAN</span>
+      <b>RESIDENTIAL APARTMENTS</b>
     </div>
-    <div class="address" style="font-size: 1.05rem;">KULAKKARAI STREET, CHROMPET<br>
-      <small style="font-size: 0.95rem;">NEAR PADAVETAMMAN TEMPLE</small>
+    <div class="address">KULAKKARAI STREET, CHROMPET<br>
+      <small>NEAR PADAVETAMMAN TEMPLE</small>
     </div>
   </div>
-  <!-- <div class="legal" style="font-size: 0.95rem;">This catalogue presents the specifications supplied for the project. Materials, brands and provisions are stated as provided in the source specification and remain subject to project terms and final approved drawings.    
-  </div> -->
-   <div class="contact-grid-container">
-            <div class="contact-map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.376509746535!2d80.15505597507604!3d12.947742487365485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU2JzUxLjkiTiA4MMKwMDknMjcuNSJF!5e0!3m2!1sen!2sin!4v1790061825595!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-   </div>
+
+  
 </section>
+
 </main>
 <script src="script.js"></script>
 </body>
