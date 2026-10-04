@@ -32,17 +32,18 @@ h2 em{color:var(--gold);font-style:italic;font-size:inherit}
 
 /* ---------- Cover ---------- */
 .cover{color:var(--cover-ink);background:#cfe3f0}
-.cover .hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
+.cover .hero{position:absolute;inset:0;width:100%;height:110%;object-fit:cover;max-width:none}
+/* .cover .hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none} */
 .coverTop{position:absolute;top:13mm;left:14mm;right:14mm;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .brandMark{display:flex;align-items:center;gap:8px;border:0px solid rgba(15,42,33,.6);padding:7px 9px;text-shadow:0 0 10px rgba(255,255,255,.6)}
 .brandMark span{font-family:Georgia,serif;font-size:1.5rem;color:var(--cover-gold);font-weight:700}
 .brandMark small{font-size:.9rem;line-height:1.25;letter-spacing:1px;font-weight:700}
 .edition{font-family: 'Times New Roman'; font-style: italic; font-size:1.25rem;letter-spacing:1px;padding-top:7px;font-weight:700;text-align:right;text-shadow:0 0 10px rgba(255,255,255,.6)}
-.coverContent{position:absolute;left:15mm;top:50mm;width:95mm;text-shadow:0 0 14px rgba(255,255,255,.55)}
+.coverContent{position:absolute;left:15mm;top:250mm;width:180mm;text-shadow:0 0 14px rgba(255,255,255,.55)}
 .coverContent .eyebrow{font-size:1.2rem;letter-spacing:2px;color:var(--cover-ink);font-weight:800}
 .coverContent h1{font-family:Georgia,serif;font-size:3.8rem;line-height:1.15;margin:8px 0 12px;font-weight:500;color:var(--cover-ink)}
 .coverContent h1 em{color:var(--cover-ink);font-style:normal;font-size:inherit}
-.rule{width:46mm;height:2px;background:var(--cover-gold);margin:7mm 0}
+/* .rule{width:46mm;height:2px;background:var(--cover-gold);margin:7mm 0} */
 .tagline{font-family:Georgia,serif;font-size:1.15rem;line-height:1.5;max-width:82mm;color:var(--cover-ink);font-weight:700;margin:1em 0}
 .location{font-size:1.15rem;line-height:1.45;font-weight:700;letter-spacing:.7px;color:var(--cover-ink)}
 .location span{font-size:1.05rem;letter-spacing:1.4px;font-weight:600}
