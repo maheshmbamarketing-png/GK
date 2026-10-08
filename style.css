@@ -147,10 +147,10 @@ h2 em{color:var(--gold);font-style:italic;font-size:inherit}
 .closingBand span{font-family:Georgia,serif;color:#e2b75d;font-size:1.05rem}
 .closingBand b{display:block;font-size:1.1rem;letter-spacing:2px;margin-top:1mm}
 .address{text-align:right;font-size:1.05rem;line-height:1.5;letter-spacing:.8px}
-.address small{color:#d9caa9;font-size:.95rem}
+.address small{color:#d9caa9;font-size:.95rem}x
 
-.contact-map-wrapper{width:calc(100% - 2 * var(--pad));height:80mm;min-height:40px;margin:8mm var(--pad);border-radius:15px;overflow:hidden;border:1px solid var(--border-color)}
-.contact-map-wrapper iframe{width:100%;height:100%;border:0;display:block}
+.contact-map-wrapper{width:calc(100% - 2 * var(--pad));height:10mm;min-height:10px;margin:8mm var(--pad);border-radius:15px;overflow:hidden;border:1px solid var(--border-color)}
+.contact-map-wrapper iframe{width:100%;height:80%;border:0;display:block}
 
 /* missing-image fallback (set by script.js) */
 img.imgMissing{background:repeating-linear-gradient(45deg,#e9e4d8,#e9e4d8 10px,#f1ede4 10px,#f1ede4 20px);min-height:40mm}
@@ -210,7 +210,7 @@ img.imgMissing{background:repeating-linear-gradient(45deg,#e9e4d8,#e9e4d8 10px,#
   .specCol h3{font-size:1.1rem}
   .closingBand{flex-direction:column;align-items:flex-start;gap:12px}
   .address{text-align:left}
-  .contact-map-wrapper{height:70vw;min-height:240px}
+  .contact-map-wrapper{height:20vw;min-height:60px}
 }
 
 /* ---------- Print: exact A4 pages ---------- */
